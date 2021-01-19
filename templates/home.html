@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Similar Movie Reccomender</title>
+
+  <link rel="icon" href="favicon.ico" />
+
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+  <body>
+
+
+
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
+    <img src="https://i.guim.co.uk/img/media/59e3a02971be77a40057c083401424561d8fd777/242_120_3225_1936/master/3225.jpg?width=700&quality=85&auto=format&fit=max&s=b6c848ff545285f465f6e9b83d7726a6" class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="Movie">
+    <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Similar Movie Reccomender</h1>
+      <p class="mb-8 leading-relaxed">Hello...If you wanna know a name of similar movie you watched Sometime then you are at Right Location..Just enter the name of movie Below and we will provide you a similar movie name....</p>
+      <div class="flex w-full justify-center items-end">
+        <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
+          <form action="/predict" method="post">
+          <label for="hero-field" class="leading-7 text-sm text-gray-600">Movie Name Here</label>
+          <input type="text" id="hero-field" name="query" class="w-full bg-gray-100 bg-opacity-50 rounded focus:ring-2 focus:ring-indigo-200 focus:bg-transparent border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <button type=submit class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Search</button>
+      </form>
+      </div>
+      <p class="text-sm mt-2 text-gray-500 mb-8 w-full">Enter Movie Name</p>
+     </div>
+     <h4 align="center">Matched Movie</h4>
+    <div style="height: 100px;width: 500px;background-color" class="shadow-lg p-3 mb-5 bg-white rounded">
+      <h1 align="center"> <b><i>{{Your_Movie}}</i></b></h1>
+
+    </div>
+  </div>
+</section>
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+      </svg>
+      <p class="leading-relaxed text-lg">Movies are more than just for entertainment.People never forget two things, their first love and the money they wasted watching a bad movie.</p>
+      <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+      <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">VISHAL RAJ</h2>
+      <p class="text-gray-500">Web Developer</p>
+    </div>
+  </div>
+</section>
+
+
+</body>
+
+</html>
